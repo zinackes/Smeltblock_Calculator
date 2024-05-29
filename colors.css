@@ -1,0 +1,77 @@
+.selected::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    height: 3px;
+    border-radius: 3px;
+    background: #0093d0;
+}
+
+.chasseur_bg, .chasseur_bg.selected::before{
+    background: #e93540 !important;
+}
+
+.chasseur_title{
+    color: #460f0e !important;
+}
+
+.chasseur_bg:hover{
+    background: #ff0011 !important;
+}
+
+.chasseur_title .group_content .box:hover{
+    background: #ff0011;
+}
+
+.fermier_bg,.fermier_bg.selected::before{
+    background: #88a332 !important;
+}
+
+.fermier_title{
+    color: #202e00 !important;
+}
+
+.fermier_bg:hover{
+    background: #bfff00 !important;
+}
+
+.pecheur_bg, .pecheur_bg.selected::before{
+    background: #40a5dd !important;
+}
+
+.pecheur_title{
+    color: #063843 !important;
+}
+
+.pecheur_bg:hover, .pecheur_title .group_content .box:hover{
+    background: #5fc7ff !important;
+}
+
+.bucheron_bg, .bucheron_bg.selected::before{
+    background: #b39e4e !important;
+}
+
+.bucheron_title{
+    color: #644116 !important;
+}
+
+.bucheron_bg:hover, .bucheron_title .group_content .box:hover{
+    background: #ffcc00 !important;
+}
+
+.mineur_bg, .mineur_bg.selected::before{
+    background: #bec9ab !important;
+}
+
+.mineur_title{
+    color: #3d3d3d !important;
+}
+
+.mineur_bg:hover, .mineur_title .group_content .box:hover{
+    background: #ffffff !important;
+}
+
+.mineur_title .group_content .box:hover p{
+    color: #010101;
+}

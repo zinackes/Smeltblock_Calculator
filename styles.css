@@ -1,0 +1,67 @@
+body{
+    font-family: "Sora";
+    margin: 0;
+    transition: all .3s ease;
+    background: linear-gradient(160deg, #0A0A0B, #18181A);
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    margin: 10px 3px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: #212221;
+    padding: 15px 25px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.box:hover{
+    background: #7cab67;
+    transition: all .3s ease;
+}
+
+.box p{
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0;
+}
+
+.group_content{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.group_content_active{
+    display: flex;
+}
+
+.group_content .box{
+    padding: 10px 15px;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+.group_content .box img{
+    max-width: 25px;
+}
