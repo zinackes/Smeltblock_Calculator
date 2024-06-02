@@ -1,8 +1,22 @@
+*{
+    font-family: "Sora";
+    transition: all .3s ease;
+}
 body{
     font-family: "Sora";
     margin: 0;
     transition: all .3s ease;
     background: linear-gradient(160deg, #0A0A0B, #18181A);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide{
+    display: none;
 }
 
 
@@ -20,7 +34,7 @@ body{
 
 .box{
     display: flex;
-    margin: 10px 3px;
+    margin: 10px 3px 0 3px;
     border-radius: 10px;
     border: 1px solid transparent;
     background: #212221;
@@ -54,6 +68,7 @@ body{
 
 .group_content_active{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .group_content .box{
@@ -64,4 +79,65 @@ body{
 
 .group_content .box img{
     max-width: 25px;
+}
+
+
+.bandeau{
+    margin-top: 200px;
+    background-color: #64b3b9;
+    color: #ffffff;
+    text-align: center;
+    padding: 1px 0;
+}
+
+.bandeau h1{
+    margin: 10px 0;
+    color: #0A0A0B;
+}
+
+.content, .content1{
+    margin-top: 75px;
+    margin-bottom: 100px;
+    background: #212221;
+    padding: 20px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.content h2, .content1 h2{
+    color: #fff;
+    text-align: center;
+}
+
+.sub_content{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.sub_content button{
+    background: transparent;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    color: #64b3b9;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Sora";
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.sub_content input{
+    pointer-events: all;
+}
+
+.sub_content button:hover{
+    background: #000000;
+}
+
+.sub_content input{
+    
 }
