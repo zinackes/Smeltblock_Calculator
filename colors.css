@@ -8,6 +8,10 @@
     background: #0093d0;
 }
 
+.group_content .selected::before{
+    width: 0;
+}
+
 .chasseur_bg, .chasseur_bg.selected::before{
     background: #e93540 !important;
 }
@@ -16,11 +20,12 @@
     color: #460f0e !important;
 }
 
-.chasseur_bg:hover{
+.navigation .chasseur_bg:hover{
     background: #ff0011 !important;
 }
 
-.chasseur_title .group_content .box:hover{
+.chasseur_title .group_content .box:hover
+, .chasseur_title .group_content .selected{
     background: #ff0011;
 }
 
@@ -32,8 +37,12 @@
     color: #202e00 !important;
 }
 
-.fermier_bg:hover{
+.navigation .fermier_bg:hover{
     background: #bfff00 !important;
+}
+
+.fermierTitle .group_content .selected{
+    background: #7cab67;
 }
 
 .pecheur_bg, .pecheur_bg.selected::before{
@@ -44,7 +53,7 @@
     color: #063843 !important;
 }
 
-.pecheur_bg:hover, .pecheur_title .group_content .box:hover{
+.navigation .pecheur_bg:hover, .pecheur_title .group_content .box:hover, .pecheur_title .group_content .selected{
     background: #5fc7ff !important;
 }
 
@@ -56,7 +65,7 @@
     color: #644116 !important;
 }
 
-.bucheron_bg:hover, .bucheron_title .group_content .box:hover{
+.navigation .bucheron_bg:hover, .bucheron_title .group_content .box:hover, .bucheron_title .group_content .selected{
     background: #ffcc00 !important;
 }
 
@@ -68,10 +77,11 @@
     color: #3d3d3d !important;
 }
 
-.mineur_bg:hover, .mineur_title .group_content .box:hover{
+.naigation .mineur_bg:hover, .mineur_title .group_content .box:hover, .mineur_title .group_content .selected{
     background: #ffffff !important;
 }
 
-.mineur_title .group_content .box:hover p{
+.mineur_title .group_content .box:hover p, .mineur_title .group_content .selected p{
     color: #010101;
 }
+
