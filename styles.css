@@ -6,13 +6,19 @@ body{
     font-family: "Sora";
     margin: 0;
     transition: all .3s ease;
-    background: linear-gradient(160deg, #0A0A0B, #18181A);
+    background: #131314;
+    display: flex;
+    justify-content:stretch;
 }
 
 .flex{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex-only-column{
+    flex-direction: column;
 }
 
 .hide{
@@ -82,8 +88,12 @@ body{
 }
 
 
-.bandeau{
+
+.window .bandeau:first-child{
     margin-top: 200px;
+}
+
+.bandeau{
     background-color: #64b3b9;
     color: #ffffff;
     text-align: center;
@@ -96,8 +106,7 @@ body{
 }
 
 .content, .content1{
-    margin-top: 75px;
-    margin-bottom: 100px;
+    margin: 75px 0;
     background: #212221;
     padding: 20px;
     border-radius: 10px;
@@ -139,5 +148,87 @@ body{
 }
 
 .sub_content input{
-    
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid #000000;
+    background: #bec9ab;
+    color: #18181A;
+    padding: 5px;
+}
+
+.sub_content input::placeholder{
+    color: #18181A;
+}
+
+.sub_content .validate{
+    border: 1px solid #64b3b9;
+    margin-top: 5px;
+}
+
+.sub_content .validate:hover{
+    background: #64b3b9;
+    color: #000000;
+}
+
+.reglages{
+    margin: 0;
+}
+
+.reglages .sub_content{
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+
+.reglages h2{
+    gap: 15px;
+}
+
+.reglages h2 img{
+    max-width: 30px;
+    filter: drop-shadow(0 0 0.2rem rgb(167, 206, 230));
+}
+
+.reglages .sub_content button{
+    background: rgb(211, 48, 51, 0.3);
+    border-color: #d33033;
+    color: #b4cae5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.reglages .sub_content button img{
+    max-width: 20px;
+}
+
+.reglages .sub_content button:hover{
+    background: rgb(211, 48, 51, 1);
+}
+
+.reglages .sub_content .selected{
+    background: rgb(104, 180, 0, 0.3);
+    border-color: #68b400;
+}
+
+.reglages .sub_content .selected:hover{
+    background: #68b400;
+    color: #0A0A0B;
+}
+
+
+.reglages .sub_content p{
+    margin: 0 7.5px;
+}
+
+.reglages .sub_content h3, .reglages .sub_content p{
+    color: #b4cae5;
+}
+
+.reglages .sub_content input{
+    border: none;
+    background-color: #ddd;
+    -webkit-appearance: none;
+    padding: 0;
+    border-radius: 500px;
 }
