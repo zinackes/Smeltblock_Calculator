@@ -1,4 +1,4 @@
-let boxs = document.querySelectorAll(".bigbox")
+let boxs = document.querySelectorAll(".bigbox");
 
 boxs.forEach(function (box) {
     box.addEventListener("click", function () {
@@ -13,7 +13,6 @@ boxs.forEach(function (box) {
         })
 
         let target = document.querySelectorAll(".group_content")[index];
-        console.log(target);
         target.classList.add("group_content_active");
     })
 })
@@ -34,7 +33,6 @@ group_boxs.forEach(function (box) {
         })
 
         let target = document.querySelectorAll(".window")[index];
-        console.log(target);
         target.classList.add("window_active");
     })
 })
